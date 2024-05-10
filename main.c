@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#define FALSE 0
 
 // Functie om de faculteit van een getal te berekenen
 long long faculteit(int n) {
@@ -15,5 +15,5 @@ int main() {
 
     printf("Faculteit van %d = %lld\n", nummer, faculteit(nummer));
 
-    return 0;
+    return FALSE;
 }
