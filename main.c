@@ -1,19 +1,25 @@
 #include <stdio.h>
 #define FALSE 0
 
-// Functie om de faculteit van een getal te berekenen
-long long faculteit(int n) {
+long long sum(const int n, const int m) {
+    return n + m;
+}
 
-    if(n == 0)
-        return 1;
-    else
-        return n * faculteit(n - 1);
+long long distinct(const int n, const int m) {
+     return n - m;
+}
+
+long long product(const int n, const int m) {
+  return n * m;
 }
 
 int main() {
-    int nummer = 3; // Verander dit getal naar het getal waarvan je de faculteit wilt berekenen
+    const int nummer_one = 3;
+    const int nummer_two = 4;
 
-    printf("Faculteit van %d = %lld\n", nummer, faculteit(nummer));
+    printf("Som van %d en %d = %lld\n", nummer_one, nummer_two, sum(nummer_one, nummer_two));
+    printf("Verschil van %d en %d = %lld\n", nummer_one, nummer_two, distinct(nummer_one, nummer_two));
+    printf("Product van %d en %d = %lld\n", nummer_one, nummer_two, product(nummer_one, nummer_two));
 
     return FALSE;
 }
