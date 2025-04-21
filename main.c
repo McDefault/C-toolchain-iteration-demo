@@ -14,6 +14,13 @@ long long product(const int n, const int m) {
 }
 
 int main() {
+    int num1, num2;
+    printf("Voer het eerste nummer in: ");
+    scanf("%d", &num1);
+
+    printf("Voer het tweede nummer in: ");
+    scanf("%d", &num2);
+
     const int nummer_one = 3;
     const int nummer_two = 4;
 
